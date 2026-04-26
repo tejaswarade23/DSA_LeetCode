@@ -4,8 +4,6 @@ class Solution {
 
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-
-            // check if it's a digit
             if (Character.isDigit(ch)) {
                 int num = ch - '0';
 
