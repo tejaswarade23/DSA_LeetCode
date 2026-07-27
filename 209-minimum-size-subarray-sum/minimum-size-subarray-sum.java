@@ -4,7 +4,7 @@ class Solution {
         int n = nums.length;
         int left = 0;
         int currentSum = 0;
-        int minLen = n + 1;
+        int minLen = Integer.MAX_VALUE;
 
         for(int right = 0; right < n; right++){
             currentSum = currentSum + nums[right];
@@ -18,6 +18,6 @@ class Solution {
           }
         
         }
-      return minLen == n + 1 ? 0 : minLen;
+      return minLen == Integer.MAX_VALUE ? 0 : minLen;
     }
 }
